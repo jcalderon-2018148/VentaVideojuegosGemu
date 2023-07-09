@@ -1,2 +1,2 @@
 # VentaVideojuegosGemu
-Página web hecha con HTML y el framework de diseño Bootstrap 5 acerca de una venta de videojuegos y accesorios de consolas en línea.
+Página web hecha con HTML y el framework de diseño Bootstrap 5 acerca de una venta de videojuegos y accesorios de consolas en línea. Hecha para desarrollar mis habilidades en la creación de páginas web. Está página contiene JavaScript para el manejo del carrito de compras y los datos estáticos que se muestran, así como también para guardar los datos del carrito para que no se pierdan al refrescar la página.
