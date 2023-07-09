@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+
+<html lang = "es">
+    <head>
+        <meta charset = "UTF-8">
+        <meta name = "viewport" content = "width = device-width, initial-scale = 1">
+        <title>Productos</title>
+
+        <link href = "styles/productosCSS.css" rel = "stylesheet">
+        <link href = "styles/css/bootstrap.min.css" rel = "stylesheet">
+        <link href = "styles/indexCSS.css" rel = "stylesheet">
+        <script src = "styles/js/bootstrap.bundle.min.js"></script>
+    </head>
+
+    <body>
+        <header >
+            <nav class = "navbar navbar-expand-sm bg-light navbar-light fixed-top">
+                <div class="container-fluid">
+                    <ul class="navbar-nav" id="pills-tab" role="tablist">
+                        <li class = "nav-item">
+                            <a class = "navbar-brand" href = "index.html"><img style = "width: 50px;" src = "image/Logo.png" alt = "Logo Pagina"></a>
+                        </li>
+                        <li class = "nav-item">
+                            <a class = "nav-link" href = "index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link active" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pill-main" type="button" role="tab"
+                                aria-controls="pill-main" aria-selected="false"><b>Productos</b></a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pill-carrito" type="button" role="tab" 
+                                aria-controls="pill-carrito" aria-selected="false"><b>Carrito</b></a>
+                        </li>
+                        <li class = "nav-item">
+                            <a class = "nav-link" href = "blog.html">Blog</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <div class ="tab-content" id="pills-tabContent">
+            <div class="tab-pane fade show active" id="pill-main" role="tabpanel" aria-labelledby="pills-main-tab">
+                <div class = "contenedor-main">
+                    <div class = "filtro-producto">
+                        <h3>Filtros</h3>
+                        <div>
+                            <h6>Consola</h6>
+                            <div class = "form-check">
+                                <input type = "radio" class = "form-check-input" id = "radio1" name = "consola" value = "todas" checked>
+                                <label class = "form-check-label" for = "radio1">Todas</label>
+                            </div>
+                            <div class = "form-check">
+                                <input type = "radio" class = "form-check-input" id = "radio2" name = "consola" value = "PS">
+                                <label class = "form-check-label" for = "radio2">PlayStation</label>
+                            </div>
+                            <div class = "form-check">
+                                <input class = "form-check-input" type="radio" id="radio3" name="consola" value="NS">
+                                <label class = "form-check-label" for = "radio3">Nintendo Switch</label>
+                            </div>
+                            <div class = "form-check">
+                                <input type = "radio" class = "form-check-input" id = "radio4" name = "consola" value = "XB">
+                                <label class = "form-check-label" for = "radio4">Xbox</label>
+                            </div>
+                        </div>
+    
+                        <div class = "linea-separador"> 
+                            <svg>
+                                <rect x="1" y="1" fill = "none"></rect>
+                            </svg>
+                        </div>
+    
+                        <div class = "rango-precio"> 
+                            <h6>Rango de precio</h6>
+                            <div>
+                                <input type = "range" min="200.00" max="10000.00" step="0.50" value="10000.00" class = "form-range" id = "rangoPrecio">
+                                <div style="text-align: center;"><label for = "rangoPrecio" class = "form-label" id="tagRango"></label></div>
+                            </div>
+                        </div>
+    
+                        <div class = "linea-separador"> 
+                            <svg>
+                                <rect x="1" y="1" fill = "none"></rect>
+                            </svg>
+                        </div>
+    
+                        <div class = "categorias-productos">
+                            <h6>Categorías</h6>
+                            <div class = "form-check">
+                                <input class = "form-check-input" type="checkbox" id="check1" name="option1" value="something">
+                                <label class = "form-check-label" for="check1">Acción</label>
+                            </div>
+                            <div class = "form-check">
+                                <input class = "form-check-input" type = "checkbox" id = "check2" name="option2" value="something">
+                                <label class="form-check-label" for="check2">Aventura</label>
+                            </div>
+                            <div class = "form-check">
+                                <input class = "form-check-input" type = "checkbox" id = "check3" name="option3" value="something">
+                                <label class="form-check-label" for="check3">Deportes</label>
+                            </div>
+                            <div class = "form-check">
+                                <input class = "form-check-input" type = "checkbox" id = "check4" name="option4" value="something">
+                                <label class="form-check-label" for="check4">Accesorios</label>
+                            </div>
+                            <div class = "form-check">
+                                <input class = "form-check-input" type = "checkbox" id = "check5" name="option5" value="something">
+                                <label class="form-check-label" for="check5">Consolas</label>
+                            </div>
+                        </div>
+    
+                        <div class = "linea-separador"> 
+                            <svg>
+                                <rect x="1" y="1" fill = "none"></rect>
+                            </svg>
+                        </div>
+                    </div>
+    
+                        
+                    <div class = "encabezado-productos">
+                        <h3>Productos</h3>
+                    </div>
+        
+                    <div class = "contenedor-productos">
+                        <div id="contenedorProductos" ></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-pane fade show" id="pill-carrito" role="tabpanel" aria-labelledby="pills-carrito-tab">
+                <div class = "ctn-main-carrito">
+                    <div class = "encabezado-carrito">
+                        <h3>Carrito</h3>
+                    </div>
+        
+                    <div class = "ctn-producto-carrito" >
+                        <div id="contenedorCarrito">
+                            <div class="card-container carritoC" id = "carrito" style="grid-template-columns: repeat(4, 1fr); gap: 20px;" >
+                                
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class = "totales-carrito">
+                        <h2 class="itemCartTotal">Total: </h2>
+                    </div>
+        
+                </div>
+            </div>
+        </div>
+        
+
+        <footer class="pie-de-pagina">
+            <div class = "grupo1">
+                <div class = "box">
+                    <figure>
+                        <a href = "#">
+                            <img src = "image/Logo.png" alt = "Logo Pagina">
+                        </a>
+                    </figure>
+                </div>
+
+                <div class = "box">
+                    <h2>SOBRE NOSOTROS</h2>
+                    <p>Una de las mas grandes tiendas Online de Videojuegos, Accesorios y servicios para Consolas en Guatemala.</p>
+                    <p>ゲーム (Gemu) es la tienda de Videojuegos más completa de Guatemala donde encontrarás los videojuegos más recientes, 
+                        accesorios necesarios para tus consolas, además de servicios de mantenimiento para tus consolas.</p>
+                    <p>ゲーム (Gemu) es una tienda especializada en consolas que desde 2022 brinda productos y servicios de alta calidad al mejor precio
+                        ofreciendo venta a todo el país para que ningún amigo cliente se pierda de ゲーム.</p>
+                </div>
+
+                <div class = "box">
+                    <h2>SIGUENOS</h2>
+                    <div class = "redes-sociales">
+                        <a href = "#"><img style = "width: 30px;" src = "image/facebookIcon.png" alt = "Facebook"></a>
+                        <a href = "#"><img style = "width: 30px;" src = "image/instaIcon.png" alt = "Instagram"></a>
+                        <a href = "#"><img style = "width: 30px;" src = "image/twitterIcon.png" alt = "Twitter"></a>
+                        <a href = "#"><img style = "width: 30px;" src = "image/whatsappIcon.png" alt = "Whatsapp"></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class = "grupo2">
+                <small>&copy; 2022 <b>ゲーム</b> - Todos los Derechos Reservados.</small>
+            </div>
+        </footer>
+
+        <script src = "product.js"></script>
+    </body>
+    
+</html>

@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+
+<html lang = "es">
+    <head>
+        <meta charset = "UTF-8">
+        <meta name = "viewport" content = "width = device-width, initial-scale = 1">
+        <title>Página de venta de videojuegos y accesorios para consolas</title>
+
+        <link href = "styles/indexCSS.css" rel = "stylesheet">
+        <link href = "styles/css/bootstrap.min.css" rel = "stylesheet">
+        <script src = "styles/js/bootstrap.bundle.min.js"></script>
+    </head>
+
+    <body>
+        <nav class = "navbar navbar-expand-sm bg-light navbar-light fixed-top">
+            <div class = "container-fluid">
+                <ul class = "navbar-nav">
+                    <li class = "nav-item">
+                        <a class = "navbar-brand" href = "index.html"><img style = "width: 50px;" src = "image/Logo.png" alt = "Logo Pagina"></a>
+                    </li>
+                    <li class = "nav-item">
+                        <a class = "nav-link" href = "index.html">Inicio</a>
+                    </li>
+                    <li class = "nav-item">
+                        <a class = "nav-link" href = "productos.html">Productos</a>
+                    </li>
+                    <li class = "nav-item">
+                        <a class = "nav-link" href = "blog.html">Blog</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div id = "carruselImagenes" class = "carousel slide container" data-bs-ride = "carousel" style="width: 1250px; padding-right: 0px;padding-left: 0px;">
+            <div class = "carousel-inner">
+                <div id = "uno" class = "carousel-item active">
+                    <img src = "image/tloup1.png" class = "d-block w-100">
+                </div>
+
+                <div id = "dos" class = "carousel-item">
+                    <img src = "image/mariostrikers.jpg" class = "d-block w-100">
+                </div>
+
+                <div id = "tres" class = "carousel-item">
+                    <img src = "image/zeldabotw.jpg" class = "d-block w-100">
+                </div>
+            </div>
+
+            <button class = "carousel-control-prev" type = "button" data-bs-target = "#carruselImagenes" data-bs-slide = "prev">
+                <span class = "carousel-control-prev-icon"></span>
+            </button>
+            <button class = "carousel-control-next" type = "button" data-bs-target = "#carruselImagenes" data-bs-slide="next">
+                <span class = "carousel-control-next-icon"></span>
+            </button>
+        </div>
+
+        <div class = "contenedor-btn-carousel">
+            <div class = "botones-carousel">
+                <a class = "boton-carousel" data-bs-target = "#carruselImagenes" data-bs-slide-to="0">
+                    <img class = "img-btn-carousel" src="image/tloup1.png" width="100%">
+                    <svg>
+                        <rect x="0" y="0" fill="none"></rect>
+                    </svg>
+                </a>
+
+                <a class = "boton-carousel" data-bs-target = "#carruselImagenes" data-bs-slide-to="1" >
+                    <img src="image/mariostrikers.jpg" width="100%">
+                    <svg>
+                        <rect x="0" y="0" fill="none"></rect>
+                    </svg>
+                </a>
+
+                <a class = "boton-carousel" data-bs-target = "#carruselImagenes" data-bs-slide-to="2">
+                    <img src="image/zeldabotw.jpg" width="100%">
+                    <svg>
+                        <rect x="0" y="0" fill="none"></rect>
+                    </svg>
+                </a>
+            </div>
+        </div>
+        
+        <div style="text-align: center;" class="encabezadoIndex">
+            <h1>Nuestra tienda</h1>
+        </div>
+
+        <div class = "contenedor-cartas">
+            <div class = "card-container">
+                <div class = "carta" style="height: 600px; width: 400px;">
+                    <div>
+                        <img class = "card-image" src = "image/controlPS5.png" alt = "Accesorios imagen">
+                    </div>
+                    <div class = "card-bdy">
+                        <h4 class = "card-title">Accesorios</h4>
+                        <p class = "card-text">Accesorios de todo tipo en la tienda</p>
+                        <a href = "productos.html" class = "btn btn-primary">Ver accesorios</a>
+                    </div>
+                </div>
+        
+                <div class = "carta" style="height: 600px; width: 400px;">
+                    <div style="width: 320px; margin: 0 auto;">
+                        <img class = "card-image" src = "image/videojuegos.jpg" alt = "Videojuegos imagen">
+                    </div>
+                    <div class = "card-bdy">
+                        <h4 class = "card-title">Videojuegos</h4>
+                        <p class = "card-text">Gran variedad de videojuegos en la tienda</p>
+                        <a href = "productos.html" class = "btn btn-primary">Ver videojuegos</a>
+                    </div>
+                </div>
+        
+                <div class = "carta" style="height: 600px; width: 400px;">
+                    <img class = "card-image" src = "image/consolasImagen.png" alt = "Consolas imagen">
+                    <div class = "card-bdy">
+                        <h4 class = "card-title">Consolas</h4>
+                        <p class = "card-text">Arreglo, mantenimiento y venta de consolas</p>
+                        <a href = "productos.html" class = "btn btn-primary">Ver consolas</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div style="text-align: center;" class="encabezadoIndex">
+            <h1>Productos Destacados</h1>
+        </div>
+
+        <div class= "contenedor-cartas">
+            <div class = "card-container" style = "grid-template-columns: repeat(4, 1fr); gap: 50px;">
+                <div class = "carta" style="width: 250px; height: 350px;">
+                    <div class = "producto-img">   
+                        <a href="#"><img class = "card-image" style="height: 130px;" src = "image/controlPS5.png"></a>
+                    </div>
+                    <div>
+                        <p><a href="#">Control PlayStation 5 - negro</a></p>
+                        <h5>Q600.00</h5>
+                    </div>
+                </div>
+
+                <div class = "carta" style="width: 250px; height: 350px;">
+                    <div class = "producto-img">
+                        <a href = "#"><img class = "card-image" src="image/products/caseNSMario.jpg"></a>
+                    </div>
+                    <div>
+                        <p><a href="#">Case Power A Running Mario Case</a></p>
+                        <h5>Q300.00</h5>
+                    </div>
+                </div>
+
+                <div class = "carta" style="width: 250px; height: 350px;">
+                    <div class = "producto-img">
+                        <a href="#"><img class = "card-image" src="image/products/marioGolfNS.jpg"></a>
+                    </div>
+                    
+                    <div>
+                        <div>
+                            <p><a href="#">Mario Golf Super Rush Nintendo Switch</a></p>
+                        </div>
+                        <div>
+                            <h5>Q699.00</h5>
+                        </div>
+                    </div> 
+                </div>
+
+                <div class = "carta" style="width: 250px; height: 350px">
+                    <div class = "producto-img">
+                        <a href = "#"><img class = "card-image" src = "image/products/cargadorNSNyko.jpg"></a>
+                    </div>
+                    <div>
+                        <div>
+                            <p><a href = "#">Cable de alimentacion de CA Nyko para Nintendo Switch (Negro)</a></p>
+                        </div>
+                        <div>
+                            <h5>Q250.00</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div class = "carta" style = "width: 250px; height: 350px;">
+                    <div class = "producto-img">
+                        <a href = "#"><img class = "card-image" src = "image/products/raniboxSixExtractionPS4.jpg"></a>
+                    </div>
+                    <div>
+                        <div>
+                            <p><a href = "#">Rainbox Six Extraction PlayStation 4</a></p>
+                        </div>
+                        <div>
+                            <h5>Q500.00</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div class = "carta" style = "width: 250px; height: 350px;">
+                    <div class = "producto-img">
+                        <a href = "#"><img class = "card-image" src = "image/products/zeldaSkywarSwordNS.jpg"></a>
+                    </div>
+                    <div>
+                        <div>
+                            <p><a href = "#">The Legend of Zelda Skyward Sword HD Nintendo Switch</a></p>
+                        </div>
+                        <div>
+                            <h5>Q699.99</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div class = "carta" style = "width: 250px; height: 350px;">
+                    <div class = "producto-img">
+                        <a href = "#"><img class = "card-image" src = "image/products/consolaNSL32gbPalkia.jpg"></a>
+                    </div>
+                    <div>
+                        <p><a href = "#">Consola Nintendo Switch Lite 32GB Edicion Palkia y Dialga</a></p>
+                    </div>
+                    <div>
+                        <h5>Q2,999.00</h5>
+                    </div>
+                </div>
+
+                <div class = "carta" style = "width: 250px; height: 350px;">
+                    <div class = "producto-img">
+                        <a href = "#"><img class = "card-image" src = "image/products/controlPowerANSMario.jpg"></a>
+                    </div>
+                    <div>
+                        <p><a href = "#">Control Power A Power up Mario Controller</a></p>
+                    </div>
+                    <div>
+                        <h5>Q350.00</h5>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+        <!--FOOTER-->
+        <footer class = "pie-de-pagina">
+            <div class = "grupo1">
+                <div class = "box">
+                    <figure>
+                        <a href = "#">
+                            <img src = "image/Logo.png" alt = "Logo Pagina">
+                        </a>
+                    </figure>
+                </div>
+
+                <div class = "box">
+                    <h2>SOBRE NOSOTROS</h2>
+                    <p>Una de las mas grandes tiendas Online de Videojuegos, Accesorios y servicios para Consolas en Guatemala.</p>
+                    <p>ゲーム (Gemu) es la tienda de Videojuegos más completa de Guatemala donde encontrarás los videojuegos más recientes, 
+                        accesorios necesarios para tus consolas, además de servicios de mantenimiento para tus consolas.</p>
+                    <p>ゲーム (Gemu) es una tienda especializada en consolas que desde 2022 brinda productos y servicios de alta calidad al mejor precio
+                        ofreciendo venta a todo el país para que ningún amigo cliente se pierda de ゲーム.</p>
+                </div>
+
+                <div class = "box">
+                    <h2>SIGUENOS</h2>
+                    <div class = "redes-sociales">
+                        <a href = "#"><img style = "width: 30px;" src = "image/facebookIcon.png" alt = "Facebook"></a>
+                        <a href = "#"><img style = "width: 30px;" src = "image/instaIcon.png" alt = "Instagram"></a>
+                        <a href = "#"><img style = "width: 30px;" src = "image/twitterIcon.png" alt = "Twitter"></a>
+                        <a href = "#"><img style = "width: 30px;" src = "image/whatsappIcon.png" alt = "Whatsapp"></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class = "grupo2">
+                <small>&copy; 2022 <b>ゲーム</b> - Todos los Derechos Reservados.</small>
+            </div>
+        </footer>
+    </body>
+
+
+</html>

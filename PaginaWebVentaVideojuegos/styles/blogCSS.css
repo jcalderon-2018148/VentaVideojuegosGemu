@@ -1,0 +1,86 @@
+.encabezado-noticias h3 {
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    padding: 20px 20px;
+    background-color: rgb(238, 238, 238);
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+#principal {
+    width: 80%;
+    height: auto;
+    overflow: hidden;
+    /* border: 1px solid lightblue; */
+    margin: 20px auto;
+    
+}
+
+#publicaciones {
+    width: 70%;
+    height: auto;
+    overflow: hidden;
+    /* border: 1px solid lightblue; */
+    margin: 10px auto;
+    padding-right: 10px;
+}
+
+.post {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    padding: 10px;
+    background: #fdfdfd;
+    border-left-style: solid;
+    border-left-width: 5px;
+    border-left-color: rgb(134, 62, 250);
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.link-post {
+    text-decoration: none;
+
+}
+
+#publicaciones a .title-post{
+    color: rgb(165, 86, 255);
+    font-size: 22px;
+    margin-left: 10px;
+}
+
+#publicaciones a .title-post:hover {
+    color: rgb(93, 0, 199);
+}
+
+#publicaciones .img-post {
+    width: 150px;
+    height: 180px;
+    object-fit: cover;
+    float: left;
+    margin: 1px 10px;
+
+}
+
+#publicaciones .datos-publicaciones {
+    color: rgb(93, 0, 199);
+}
+
+#publicaciones .leer-mas {
+    color:rgb(93, 0, 199);
+    border: 0px;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+#publicaciones .p-post {
+    font-size: 16px;
+    padding: 5px;
+
+}
